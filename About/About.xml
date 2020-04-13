@@ -1,0 +1,23 @@
+<ModMetaData>
+  <name>Parallel Power Grid (Parallel Conduits) Addons</name>
+  <packageId>ttr.ParallelPowerGridAddon</packageId>
+  <author>ttr</author>
+  <url></url>  
+  <supportedVersions>
+    <li>1.0</li>    
+	<li>1.1</li>    
+  </supportedVersions>  
+  <description>Patch for adding undergound powerlines from RT Switch to Parallel Power Grid</description>
+  <modDependencies>
+    <li>
+      <packageId>Supes.ParallelPowerGrid</packageId>
+      <displayName>Parallel Power Grid (Parallel Conduits) Addons</displayName>
+    </li>
+  </modDependencies>    
+  <loadAfter>
+    <li>Supes.ParallelPowerGrid</li>
+	<li>Haplo.PowerSwitch</li>
+	<li>Owlchemist.UndergroundPowerConduits</li>
+  </loadAfter>
+</ModMetaData>
+
