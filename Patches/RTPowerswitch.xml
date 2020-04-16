@@ -8,13 +8,13 @@
 			<xpath>/Defs/ThingDef[defName="PowerConduitInvisible"]</xpath>
 			<value>
 				<DesignatorDropdownGroupDef>
-					<defName>PowerConduitsU</defName> 
+					<defName>PowerConduitsUPS</defName>
 				</DesignatorDropdownGroupDef>
 
-				<ThingDef ParentName="ParaCond" Name="ParaCondU" Abstract="True">
-					<altitudeLayer>FloorEmplacement</altitudeLayer>
+				<ThingDef ParentName="ParaCond" Name="ParaCondUPS" Abstract="True">
+				    <altitudeLayer>Conduits</altitudeLayer>
 					<passability>Standable</passability>
-					<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+					<drawerType>MapMeshAndRealTime</drawerType>
 					<statBases>
 						<MaxHitPoints>180</MaxHitPoints>
 						<WorkToBuild>120</WorkToBuild>
@@ -27,9 +27,9 @@
 					<researchPrerequisites>
 						<li>ResearchPowerConduitsInvisible</li>
 					</researchPrerequisites>
-					<designatorDropdown>PowerConduitsU</designatorDropdown>
+					<designatorDropdown>PowerConduitsUPS</designatorDropdown>
 				</ThingDef>
-				<ThingDef ParentName="ParaCondU">
+				<ThingDef ParentName="ParaCondUPS">
 					<defName>ParaCondRedU</defName>		
 					<label>Undergound parallel conduit (Red)</label>
 					<graphicData>
@@ -58,7 +58,7 @@
 					</comps>
 				</ThingDef>
 				
-				<ThingDef ParentName="ParaCondU">
+				<ThingDef ParentName="ParaCondUPS">
 					<defName>ParaCondBlueU</defName>
 					<label>Undergound parallel conduit (Blue)</label>
 					<graphicData>
@@ -84,7 +84,7 @@
 					</comps>
 				</ThingDef>
 				
-				<ThingDef ParentName="ParaCondU">
+				<ThingDef ParentName="ParaCondUPS">
 					<defName>ParaCondGreenU</defName>
 					<label>Undergound parallel conduit (Green)</label>
 					<graphicData>
@@ -119,7 +119,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName="PowerConduitInvisible"][not(designatorDropdown)]</xpath>
 			<value>
-				<designatorDropdown>PowerConduitsU</designatorDropdown>
+				<designatorDropdown>PowerConduitsUPS</designatorDropdown>
 			</value>
 		</match>
 	</Operation>

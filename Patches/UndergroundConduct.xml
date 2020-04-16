@@ -7,8 +7,8 @@
 		<match Class="PatchOperationInsert">
 			<xpath>/Defs/ThingDef[defName="PowerConduitInvisible"]</xpath>
 			<value>
-				<ThingDef ParentName="PowerConduit" Name="ParaCondU" Abstract="True">
-					<altitudeLayer>FloorEmplacement</altitudeLayer>
+				<ThingDef ParentName="ParaCond" Name="ParaCondU" Abstract="True">
+					<altitudeLayer>Conduits</altitudeLayer>
 					<passability>Standable</passability>
 					<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 					<statBases>

@@ -2,16 +2,17 @@
   <name>Parallel Power Grid (Parallel Conduits) Addons</name>
   <packageId>ttr.ParallelPowerGridAddon</packageId>
   <author>ttr</author>
-  <url></url>  
+  <url>https://steamcommunity.com/sharedfiles/filedetails/?id=2059429490</url>
   <supportedVersions>
-    <li>1.0</li>    
-	<li>1.1</li>    
+    <li>1.0</li>
+	<li>1.1</li>
   </supportedVersions>  
   <description>Patch for adding undergound powerlines from RT Switch to Parallel Power Grid</description>
   <modDependencies>
     <li>
       <packageId>Supes.ParallelPowerGrid</packageId>
-      <displayName>Parallel Power Grid (Parallel Conduits) Addons</displayName>
+      <displayName>Parallel Power Grid (Parallel Conduits)</displayName>
+	  <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1277677885</steamWorkshopUrl>
     </li>
   </modDependencies>    
   <loadAfter>
