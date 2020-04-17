@@ -7,7 +7,7 @@
     <li>1.0</li>
 	<li>1.1</li>
   </supportedVersions>  
-  <description>Patch for adding undergound powerlines from RT Switch to Parallel Power Grid</description>
+  <description>Patch for adding undergound powerlines from PowerSwitch or UndergroundPowerConduits to Parallel Power Grid</description>
   <modDependencies>
     <li>
       <packageId>Supes.ParallelPowerGrid</packageId>
