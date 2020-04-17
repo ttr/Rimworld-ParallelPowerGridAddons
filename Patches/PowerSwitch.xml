@@ -33,7 +33,7 @@
 					<defName>ParaCondRedU</defName>		
 					<label>Undergound parallel conduit (Red)</label>
 					<graphicData>
-						<texPath>Things/ParallelPowerGrid/ParaConduitRed_Atlas</texPath>
+						<texPath>Things/Building/Linked/Alpha_Atlas</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<linkType>Basic</linkType>
 						<linkFlags>
@@ -62,7 +62,7 @@
 					<defName>ParaCondBlueU</defName>
 					<label>Undergound parallel conduit (Blue)</label>
 					<graphicData>
-						<texPath>Things/ParallelPowerGrid/ParaConduitBlue_Atlas</texPath>
+						<texPath>Things/Building/Linked/Alpha_Atlas</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<linkType>Basic</linkType>
 						<linkFlags>
@@ -88,7 +88,7 @@
 					<defName>ParaCondGreenU</defName>
 					<label>Undergound parallel conduit (Green)</label>
 					<graphicData>
-						<texPath>Things/ParallelPowerGrid/ParaConduitGreen_Atlas</texPath>
+						<texPath>Things/Building/Linked/Alpha_Atlas</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<linkType>Basic</linkType>
 						<linkFlags>
