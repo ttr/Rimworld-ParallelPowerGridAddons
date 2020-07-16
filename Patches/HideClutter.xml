@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationInsert">
+		<xpath>/Defs/ThingDef[@Name="ParaBuilding"]</xpath>
+		<value>
+			<DesignatorDropdownGroupDef>
+				<defName>ParaCondGr</defName>
+			</DesignatorDropdownGroupDef>
+			<DesignatorDropdownGroupDef>
+				<defName>ParaSockGr</defName>
+			</DesignatorDropdownGroupDef>
+			<DesignatorDropdownGroupDef>
+				<defName>ParaBattGr</defName>
+			</DesignatorDropdownGroupDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[@Name="ParaCond"][not(designatorDropdown)]</xpath>
+		<value>
+			<designatorDropdown>ParaCondGr</designatorDropdown>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[@Name="ParaBat"][not(designatorDropdown)]</xpath>
+		<value>
+			<designatorDropdown>ParaBattGr</designatorDropdown>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="ParaCondSocket"][not(designatorDropdown)]</xpath>
+		<value>
+			<designatorDropdown>ParaSockGr</designatorDropdown>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="ParaCondSocketRed"][not(designatorDropdown)]</xpath>
+		<value>
+			<designatorDropdown>ParaSockGr</designatorDropdown>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="ParaCondSocketBlue"][not(designatorDropdown)]</xpath>
+		<value>
+			<designatorDropdown>ParaSockGr</designatorDropdown>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="ParaCondSocketGreen"][not(designatorDropdown)]</xpath>
+		<value>
+			<designatorDropdown>ParaSockGr</designatorDropdown>
+		</value>
+	</Operation>
+</Patch>
