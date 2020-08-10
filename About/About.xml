@@ -6,6 +6,7 @@
   <supportedVersions>
     <li>1.0</li>
 	<li>1.1</li>
+	<li>1.2</li>
   </supportedVersions>  
   <description>Patch for adding undergound powerlines from PowerSwitch or UndergroundPowerConduits to Parallel Power Grid. Also declutter few things by grouping them.</description>
   <modDependencies>
