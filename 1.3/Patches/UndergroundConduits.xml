@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Underground Power Conduits</li>
+		</mods>
+		<match Class="PatchOperationInsert">
+			<xpath>/Defs/ThingDef[defName="PowerConduitInvisible"]</xpath>
+			<value>
+				<ThingDef ParentName="ParaCond" Name="ParaCondU" Abstract="True">
+					<altitudeLayer>Conduits</altitudeLayer>
+					<passability>Standable</passability>
+					<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+					<statBases>
+						<WorkToBuild>550</WorkToBuild>
+						<Flammability>0.0</Flammability>
+						<Beauty>0</Beauty>
+					</statBases>
+					<designatorDropdown>PowerConduits</designatorDropdown>
+				</ThingDef>
+				<ThingDef ParentName="ParaCondU">
+					<defName>ParaCondRedU</defName>		
+					<label>Undergound parallel conduit (Red)</label>
+					<graphicData>
+						<texPath>Things/Building/Linked/Alpha_Atlas</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+						<linkType>Basic</linkType>
+						<linkFlags>
+							<li>16384</li>
+						</linkFlags>
+						<damageData>
+							<rect>(0,0.35,1,0.3)</rect>
+						</damageData>
+					</graphicData>
+					<building>
+						<blueprintGraphicData>
+							<texPath>Things/ParallelPowerGrid/ParaConduitRedBP_Atlas</texPath>
+						</blueprintGraphicData>
+					</building>
+					<uiIconPath>Things/ParallelPowerGrid/ParaConduitRed_MenuIcon</uiIconPath>
+					<comps>
+						<li Class="Parallel_PowerGrid.CompProperties_ParaPower">
+							<compClass>Parallel_PowerGrid.Comp_ParaPower</compClass>
+							<startElectricalFires>false</startElectricalFires>
+							<Layer>0</Layer>
+						</li>
+					</comps>
+				</ThingDef>
+				
+				<ThingDef ParentName="ParaCondU">
+					<defName>ParaCondBlueU</defName>
+					<label>Undergound parallel conduit (Blue)</label>
+					<graphicData>
+						<texPath>Things/Building/Linked/Alpha_Atlas</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+						<linkType>Basic</linkType>
+						<linkFlags>
+							<li>8192</li>
+						</linkFlags>
+					</graphicData>
+					<building>
+						<blueprintGraphicData>
+							<texPath>Things/ParallelPowerGrid/ParaConduitBlueBP_Atlas</texPath>
+						</blueprintGraphicData>
+					</building>
+					<uiIconPath>Things/ParallelPowerGrid/ParaConduitBlue_MenuIcon</uiIconPath>
+					<comps>
+						<li Class="Parallel_PowerGrid.CompProperties_ParaPower">
+							<compClass>Parallel_PowerGrid.Comp_ParaPower</compClass>
+							<startElectricalFires>false</startElectricalFires>
+							<Layer>1</Layer>
+						</li>
+					</comps>
+				</ThingDef>
+				
+				<ThingDef ParentName="ParaCondU">
+					<defName>ParaCondGreenU</defName>
+					<label>Undergound parallel conduit (Green)</label>
+					<graphicData>
+						<texPath>Things/Building/Linked/Alpha_Atlas</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+						<linkType>Basic</linkType>
+						<linkFlags>
+							<li>4096</li>
+						</linkFlags>
+					</graphicData>
+					<building>
+						<blueprintGraphicData>
+							<texPath>Things/ParallelPowerGrid/ParaConduitGreenBP_Atlas</texPath>
+						</blueprintGraphicData>
+					</building>
+					<uiIconPath>Things/ParallelPowerGrid/ParaConduitGreen_MenuIcon</uiIconPath>
+					<comps>
+						<li Class="Parallel_PowerGrid.CompProperties_ParaPower">
+							<compClass>Parallel_PowerGrid.Comp_ParaPower</compClass>
+							<startElectricalFires>false</startElectricalFires>
+							<Layer>2</Layer>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>
